@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-
+short int SHOW_END=0;
 
 void file_copy(FILE *, FILE *);
 
@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 				while(s-- > 1) 
 					switch( (*argv)[s] ){
 
-						
+						case 'E': SHOW_END=1; break;
 						default : printf("mincat: invalid option -- '%c'\n",(*argv)[s]);exit(0);
 					}
 			}
@@ -50,7 +50,8 @@ void file_copy(FILE * ifp, FILE *ofp)
 
 	while( (c = getc(ifp)) !=EOF ) {
 		
-		
+		if(c=='\n') 
+			if(SHOW_END)putc('$',ofp);
 
 		putc(c,ofp);
 	}
