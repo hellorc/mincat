@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
 					switch( (*argv)[s] ){
 
 						case 'E': SHOW_END=1; break;
-						default : printf("mincat: invalid option -- '%c'\n",(*argv)[s]);exit(0);
+						default : printf("mincat--> invalid option -- '%c'\n",(*argv)[s]);exit(0);
 					}
 			}
 			else 
