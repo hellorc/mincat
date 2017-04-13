@@ -2,9 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-//yo
-//yo honey singh
-
 short int SHOW_END=0;
 
 void file_copy(FILE *, FILE *);
