@@ -2,9 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-//yo
-//another comment
-
 short int SHOW_END=0;
 
 void file_copy(FILE *, FILE *);
