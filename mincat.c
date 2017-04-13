@@ -2,6 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+//yo
+
 short int SHOW_END=0;
 
 void file_copy(FILE *, FILE *);
